@@ -30,12 +30,12 @@ public class LoginPage {
      * метод для ввода логина
      */
     public void inputLogin(String login) {
-        loginField.sendKeys(ConfProperties.getProperty("login")); }
+        loginField.sendKeys(login); }
     /**
      * метод для ввода пароля
      */
     public void inputPasswd(String passwd) {
-        passwdField.sendKeys(ConfProperties.getProperty("passwd")); }
+        passwdField.sendKeys(passwd); }
     /**
      * метод для осуществления нажатия кнопки входа в аккаунт
      */
