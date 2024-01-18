@@ -4,18 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cea6f0-091c-4d1b-bdbd-3baaf378e21a" name="Default Changelist" comment="update test">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org.eltpoisk/NavigationMenuTest.java" afterDir="false" />
+    <list default="true" id="e5cea6f0-091c-4d1b-bdbd-3baaf378e21a" name="Default Changelist" comment="create NavigationMenuTest.java">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org.eltpoisk/LoginTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/autotest-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/eltpoisk/LoginTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org.eltpoisk/NavigationMenuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org.eltpoisk/NavigationMenuTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org.eltpoisk/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org.eltpoisk/ProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/conf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/conf.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/conf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/conf.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/eltpoisk/NavigationMenuTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/eltpoisk/NavigationMenuTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/eltpoisk/ProfilePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/eltpoisk/ProfilePage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,14 +59,14 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="Console" />
+    <property name="settings.editor.selected.configurable" value="GitLabConfigurableProvider" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.eltpoisk" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.NavigationMenuTest.loginTest">
+  <component name="RunManager" selected="JUnit.NavigationMenuTest.navigationMenuTest">
     <configuration name="LoginTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="autotest" />
       <extension name="coverage">
@@ -116,7 +113,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NavigationMenuTest.loginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NavigationMenuTest.navigationMenuTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="autotest" />
       <extension name="coverage">
         <pattern>
@@ -126,7 +123,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.eltpoisk" />
       <option name="MAIN_CLASS_NAME" value="org.eltpoisk.NavigationMenuTest" />
-      <option name="METHOD_NAME" value="loginTest" />
+      <option name="METHOD_NAME" value="navigationMenuTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -173,7 +170,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.NavigationMenuTest.loginTest" />
+        <item itemvalue="JUnit.NavigationMenuTest.navigationMenuTest" />
         <item itemvalue="JUnit.NavigationMenuTest" />
         <item itemvalue="JUnit.NavigationMenuTest.test" />
         <item itemvalue="JUnit.LoginTest1.test" />
@@ -218,7 +215,21 @@
       <option name="project" value="LOCAL" />
       <updated>1704976910021</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="create NavigationMenuTest.java">
+      <created>1705503679208</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705503679208</updated>
+    </task>
+    <task id="LOCAL-00006" summary="create NavigationMenuTest.java">
+      <created>1705503720870</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1705503720870</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -248,6 +259,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create loginform" />
     <MESSAGE value="update test" />
-    <option name="LAST_COMMIT_MESSAGE" value="update test" />
+    <MESSAGE value="create NavigationMenuTest.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="create NavigationMenuTest.java" />
   </component>
 </project>
