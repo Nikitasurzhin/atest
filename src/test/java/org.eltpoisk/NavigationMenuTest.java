@@ -209,6 +209,7 @@ Thread.sleep(2000);
         assertEquals("Клиенты", textConverter(driver.findElement(By.xpath("//*[@id=\"ext-gen102\"]/li[4]/div/a/span")).getText()));
         assertEquals("Карточка клиента", textConverter(driver.findElement(By.xpath("//*[@id=\"ext-gen334\"]/li/div/a/span")).getText()));
         profilePage.userLogout();
+
     }
 
 
