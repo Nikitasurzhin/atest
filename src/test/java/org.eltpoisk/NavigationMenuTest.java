@@ -206,8 +206,9 @@ Thread.sleep(2000);
         assertEquals("По номеру", textConverter(driver.findElement(By.xpath("/html/body/div[2]/div[2]/div[2]/ul/div/li/ul/li[2]/ul/li[1]/ul/li/div/a/span")).getText()));
         assertEquals("Проекты на пролонгацию", textConverter(driver.findElement(By.xpath("/html/body/div[2]/div[2]/div[2]/ul/div/li/ul/li[2]/ul/li[2]/div/a/span")).getText()));
         assertEquals("По номеру", textConverter(driver.findElement(By.xpath("/html/body/div[2]/div[2]/div[2]/ul/div/li/ul/li[2]/ul/li[2]/ul/li/div/a/span")).getText()));
-        assertEquals("Клиенты", textConverter(driver.findElement(By.xpath("//*[@id=\"ext-gen102\"]/li[3]/div/a/span")).getText()));
-        assertEquals("Карточка клиента", textConverter(driver.findElement(By.xpath("//*[@id=\"ext-gen398\"]/li/div/a/span")).getText()));
+        assertEquals("Клиенты", textConverter(driver.findElement(By.xpath("//*[@id=\"ext-gen102\"]/li[4]/div/a/span")).getText()));
+        assertEquals("Карточка клиента", textConverter(driver.findElement(By.xpath("//*[@id=\"ext-gen334\"]/li/div/a/span")).getText()));
+        profilePage.userLogout();
     }
 
 

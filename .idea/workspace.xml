@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cea6f0-091c-4d1b-bdbd-3baaf378e21a" name="Default Changelist" comment="create NavigationMenuTest.java">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="e5cea6f0-091c-4d1b-bdbd-3baaf378e21a" name="Default Changelist" comment="создан тест для полноценный тест для меню навигации Рольф">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org.eltpoisk/NavigationMenuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org.eltpoisk/NavigationMenuTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org.eltpoisk/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org.eltpoisk/ProfilePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/conf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/conf.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/conf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/conf.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/org/eltpoisk/NavigationMenuTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/eltpoisk/NavigationMenuTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/eltpoisk/ProfilePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/eltpoisk/ProfilePage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1705503720870</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="создан тест для полноценный тест для меню навигации Рольф">
+      <created>1705586649853</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1705586649853</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -260,6 +264,7 @@
     <MESSAGE value="create loginform" />
     <MESSAGE value="update test" />
     <MESSAGE value="create NavigationMenuTest.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="create NavigationMenuTest.java" />
+    <MESSAGE value="создан тест для полноценный тест для меню навигации Рольф" />
+    <option name="LAST_COMMIT_MESSAGE" value="создан тест для полноценный тест для меню навигации Рольф" />
   </component>
 </project>
