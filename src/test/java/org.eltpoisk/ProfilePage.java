@@ -15,7 +15,7 @@ public class ProfilePage {
        /**
      * определение локатора кнопки выхода из аккаунта
      */
-    @FindBy(xpath = "//*[@id=\"ext-gen81\"]")
+    @FindBy(css = "button.x-btn-text.logout")
     private WebElement logoutBtn;
     /**
      * метод для нажатия кнопки выхода из аккаунта
@@ -23,7 +23,7 @@ public class ProfilePage {
     public void userLogout() {
         logoutBtn.click(); }
 
-    @FindBy(xpath = "//*[@id=\"ext-gen394\"]/li[1]/div")
+    @FindBy(xpath = "//a[contains(span/text(), 'Шаблоны')]")
     private WebElement TemplateBtn;
 
     public void Template() {
@@ -74,7 +74,33 @@ public class ProfilePage {
     private WebElement closeCalendar;
 
     public void clickExitCalendare(){
+
         closeCalendar.click();
+    }
+    @FindBy (xpath = "/html/body/div[2]/div[2]/div[2]/ul/div/li/ul/li[1]/ul/li[2]/div/a/span")
+    private WebElement fastRegistration;
+
+    public void clickfastRegistration(){
+
+        fastRegistration.click();
+    }
+    @FindBy (xpath = "//*[@id=\"dagoreg_comment\"]")
+    private WebElement CommentFieldFastRegistration;
+    public void sendKeysCommentField(){
+        CommentFieldFastRegistration.sendKeys("Тестовый комментарий");
+    }
+    @FindBy (xpath = "//*[@id=\"submitFCR\"]/tbody/tr[2]/td[2]")
+    private WebElement SelectButtonFastRegistration;
+
+    public void clickSelectButtonFastRegistr(){
+    SelectButtonFastRegistration.click();
+    }
+
+    @FindBy (xpath = "/html/body/div[2]/div[2]/div[2]/ul/div/li/ul/li[2]/ul/li[1]/ul/li/div/a")
+    private WebElement buttonInsurByNumber;
+
+    public void clickButtonInsurByNumber(){
+        buttonInsurByNumber.click();
     }
 
 }
