@@ -219,7 +219,7 @@ public class FastRegistrationTest {
            assertEquals(true, driver.findElement(By.xpath("//input[@id=\"1CONTRACT_BLANK_A7\"]")).isDisplayed());
            assertEquals("Виртуальный бланк:", driver.findElement(By.xpath("//label[@for=\"1CONTRACT_BLANK_VIRTUAL_BLANK\"]")).getText());
            assertEquals(true, driver.findElement(By.xpath("//input[@id=\"1CONTRACT_BLANK_VIRTUAL_BLANK\"]")).isDisplayed());
-           assertEquals("Номер договора:", driver.findElement(By.xpath("//label[@for=\"1ORIGINAL_NUMBER")).getText());
+           assertEquals("Номер договора:", driver.findElement(By.xpath("//label[@for=\"1ORIGINAL_NUMBER\"]")).getText());
            assertEquals(true, driver.findElement(By.xpath("//input[@id=\"1ORIGINAL_NUMBER\"]")).isDisplayed());
            assertEquals("Банк:", driver.findElement(By.xpath("//label[@for=\"1CONTRACT_CREDITOR_BANK\"]")).getText());
            assertEquals(true, driver.findElement(By.xpath("//input[@id=\"1CONTRACT_CREDITOR_BANK\"]")).isDisplayed());
@@ -236,7 +236,7 @@ public class FastRegistrationTest {
            //dateOfIssue.toString();
            SimpleDateFormat formatDate = new SimpleDateFormat("dd.MM.yyyy");
            String formatedDateofIssue = formatDate(dateOfIssue);
-           assertEquals(formatedDateofIssue, driver.findElement(By.xpath("//input[@id=\"1CONTRACT_SIGN_DATE\"]")) );
+           assertEquals(formatedDateofIssue, driver.findElement(By.xpath("//input[@id=\"1CONTRACT_SIGN_DATE\"]")).getText());
            assertEquals("Начало действия:",driver.findElement(By.xpath("//label[@for=\"1CONTRACT_BEGIN_DATE\"]")).getText());
            assertEquals("Конец действия:", driver.findElement(By.xpath("//label[@for=\"1CONTRACT_END_DATE\"]")).getText());
         boolean isContractEndDatePresent = driver.findElements(By.id("1CONTRACT_END_DATE")).isEmpty();

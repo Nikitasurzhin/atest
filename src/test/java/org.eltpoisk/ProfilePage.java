@@ -102,5 +102,11 @@ public class ProfilePage {
     public void clickButtonInsurByNumber(){
         buttonInsurByNumber.click();
     }
+        @FindBy (xpath = "/html/body/div[3]/div/div[1]/div[2]/div[1]/div/div/div/div/div/div/table/tbody/tr[1]/td[1]/div/div[2]/div[1]/div/div/div")
+        private WebElement buttonKasko;
+
+        public void clickButtonKasko(){
+            buttonKasko.click();
+    }
 
 }

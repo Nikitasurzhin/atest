@@ -4,18 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cea6f0-091c-4d1b-bdbd-3baaf378e21a" name="Default Changelist" comment="Доработка NavigationMenuTest и TemplatesMenuTest">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org.eltpoisk/FastRegistrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org.eltpoisk/InsuranceContractNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/webdrivermanager.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="e5cea6f0-091c-4d1b-bdbd-3baaf378e21a" name="Default Changelist" comment="Доработка тестов">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org.eltpoisk/KaskoPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org.eltpoisk/RandomDataTools.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org.eltpoisk/RgsKasko.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org.eltpoisk/NavigationMenuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org.eltpoisk/NavigationMenuTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org.eltpoisk/FastRegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org.eltpoisk/FastRegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org.eltpoisk/InsuranceContractNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org.eltpoisk/InsuranceContractNumber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org.eltpoisk/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org.eltpoisk/ProfilePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org.eltpoisk/TemplatesMenuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org.eltpoisk/TemplatesMenuTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/conf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/conf.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/conf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/conf.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/eltpoisk/NavigationMenuTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/eltpoisk/NavigationMenuTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/org/eltpoisk/ProfilePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/eltpoisk/ProfilePage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +62,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -71,21 +70,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.FastRegistrationTest.FastRegistrationTest">
-    <configuration name="FastRegistrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="autotest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.eltpoisk.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.eltpoisk" />
-      <option name="MAIN_CLASS_NAME" value="org.eltpoisk.FastRegistrationTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FastRegistrationTest.FastRegistrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="autotest" />
       <extension name="coverage">
@@ -97,6 +81,22 @@
       <option name="PACKAGE_NAME" value="org.eltpoisk" />
       <option name="MAIN_CLASS_NAME" value="org.eltpoisk.FastRegistrationTest" />
       <option name="METHOD_NAME" value="FastRegistrationTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InsuranceContractNumber.insurContractNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="autotest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.eltpoisk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.eltpoisk" />
+      <option name="MAIN_CLASS_NAME" value="org.eltpoisk.InsuranceContractNumber" />
+      <option name="METHOD_NAME" value="insurContractNumber" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -118,6 +118,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RgsKasko.RgsKaskoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="autotest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.eltpoisk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.eltpoisk" />
+      <option name="MAIN_CLASS_NAME" value="org.eltpoisk.RgsKasko" />
+      <option name="METHOD_NAME" value="RgsKaskoTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TemplatesMenuTest.TemplatesMenuTestFilter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="autotest" />
       <extension name="coverage">
@@ -129,22 +145,6 @@
       <option name="PACKAGE_NAME" value="org.eltpoisk" />
       <option name="MAIN_CLASS_NAME" value="org.eltpoisk.TemplatesMenuTest" />
       <option name="METHOD_NAME" value="TemplatesMenuTestFilter" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TemplatesMenuTest.encodingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="autotest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.eltpoisk.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.eltpoisk" />
-      <option name="MAIN_CLASS_NAME" value="org.eltpoisk.TemplatesMenuTest" />
-      <option name="METHOD_NAME" value="encodingTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -178,8 +178,8 @@
         <item itemvalue="JUnit.FastRegistrationTest.FastRegistrationTest" />
         <item itemvalue="JUnit.TemplatesMenuTest.TemplatesMenuTestFilter" />
         <item itemvalue="JUnit.NavigationMenuTest.navigationMenuTest" />
-        <item itemvalue="JUnit.FastRegistrationTest" />
-        <item itemvalue="JUnit.TemplatesMenuTest.encodingTest" />
+        <item itemvalue="JUnit.RgsKasko.RgsKaskoTest" />
+        <item itemvalue="JUnit.InsuranceContractNumber.insurContractNumber" />
       </list>
     </recent_temporary>
   </component>
@@ -262,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1705925437508</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Доработка тестов">
+      <created>1710152523879</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1710152523879</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -297,7 +304,8 @@
     <MESSAGE value="добавил проверки пунктов меню &quot;клиенты&quot; и &quot;карточка клиента&quot; бэкофисБСОРольфСПБ в тесте NavigationMenuTest" />
     <MESSAGE value="реализация теста для Продажа страховых продуктов&gt;&gt;Шаблоны" />
     <MESSAGE value="Доработка NavigationMenuTest и TemplatesMenuTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Доработка NavigationMenuTest и TemplatesMenuTest" />
+    <MESSAGE value="Доработка тестов" />
+    <option name="LAST_COMMIT_MESSAGE" value="Доработка тестов" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

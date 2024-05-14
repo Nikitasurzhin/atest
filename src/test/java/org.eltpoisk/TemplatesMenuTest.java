@@ -218,13 +218,12 @@ public class TemplatesMenuTest {
         WebElement timeElement = driver.findElement(By.xpath("//*[@id=\"saved_contracts_table\"]/tbody/tr[2]/td[2]"));
         String timeValue = timeElement.getText().trim();
         assertTrue(timeValue.matches("\\d{2}\\.\\d{2}\\.\\d{4} \\d{2}:\\d{2}:\\d{2}"));
-        System.out.println(timeValue);
         assertEquals(true, (driver.findElement(By.cssSelector("img[src=\"images/load.png\"]")).isDisplayed()));
         assertEquals(true, (driver.findElement(By.cssSelector("img[src=\"images/anchor.png\"]")).isDisplayed()));
         assertEquals(true, (driver.findElement(By.cssSelector("img[src=\"images/uritused.gif\"")).isDisplayed()));
         assertEquals(true, (driver.findElement(By.cssSelector("img[src=\"images/cancel.png\"]")).isDisplayed()));
         assertEquals(true, (driver.findElement(By.xpath("//*[@id=\"saved_contracts_table\"]/tbody/tr[52]/td/div")).isDisplayed()));
-        assertEquals(true, (driver.findElement(By.xpath("//*[@id=\"saved_contracts_table\"]/tbody/tr[142]/td/div")).isDisplayed()));
+        assertEquals(true, (driver.findElement(By.xpath("/html/body/table/tbody/tr[2]/td/table/tbody/tr[2]/td/div/table/tbody/tr[2]/td/table/tbody/tr[227]/td/div")).isDisplayed()));
         assertEquals(true, (driver.findElement(By.xpath("//*[@id=\"ext-gen3\"]/table/tbody/tr[2]/td/table/tbody/tr[2]/td/div/table/tbody/tr[2]/td/a")).isDisplayed()));
 
     }
