@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
+import org.openqa.selenium.interactions.Actions;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
@@ -14,7 +14,7 @@ public class KaskoPage {
      * конструктор класса, занимающийся инициализацией полей класса
      */
     public WebDriver driver;
-    public KaskoPage(WebDriver driver) {
+        public KaskoPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
         this.driver = driver; }
 
@@ -41,7 +41,7 @@ public class KaskoPage {
         DOB.sendKeys("13.05.1966");
     }
 
-    @FindBy(xpath = "//*[@id=\"INSURANCE_OBJECT_BRAND\"]/option[129]")
+    @FindBy(xpath = "//*[@id=\"INSURANCE_OBJECT_BRAND\"]/option[131]")
     private WebElement Geely;
 
     public void MarkGeelyChoice(){
@@ -132,17 +132,18 @@ public class KaskoPage {
     public void BtnNextPageClick(){
         BtnNextPage.click();
     }
-    @FindBy(xpath = "/html/body/div[1]/div/div/div[3]/div[2]/div/div/div/div/div/div/div[1]/div/div/div[2]/div/div/div[6]/div/div/div/div[1]/div/div/div[4]/div/div/a[1]/span/span/span[2]")
+    @FindBy(xpath = "/html/body/div[1]/div/div/div[3]/div[2]/div/div/div/div/div/div/div[1]/div/div/div[2]/div/div/div/div/div/div/div[1]/div/div/div[4]/div/div/a[1]/span/span/span[2]")
     public WebElement RgsHullInsurance;
-
     public void RgsHullInsuranceClick(){
         RgsHullInsurance.click();
     }
-    @FindBy(xpath = "/html/body/div[1]/div/div/div[3]/div[2]/div/div/div/div/div/div/div[1]/div/div/div[2]/div/div/div[6]/div/div/div/div[2]/div/div/label[2]/div[2]")
+
+    @FindBy(xpath = "/html/body/div[1]/div/div/div[3]/div[2]/div/div/div/div/div/div/div[1]/div/div/div[2]/div/div/div/div/div/div/div[2]/div/div/label[3]/div[2]")
     public WebElement RgsInfoBlock;
 
-    @FindBy(xpath = "/html/body/div[1]/div/div/div[3]/div[2]/div/div/div/div/div/div/div[1]/div/div/div[2]/div/div/div[6]/div/div/div/div[1]/div/div/div[4]/div/div/div/div/div/span")
+    @FindBy(xpath = "/html/body/div[1]/div/div/div[3]/div[2]/div/div/div/div/div/div/div[1]/div/div/div[2]/div/div/div/div/div/div/div[1]/div/div/div[4]/div/div/div/div/div/span")
     public WebElement RgsPrice;
+
     @FindBy(xpath = "//*[@id=\"OWNER_LAST_NAME\"]")
     private WebElement Surname3page;
 
@@ -167,17 +168,17 @@ public class KaskoPage {
     public void DOB3page(){
         DOB3page.sendKeys("13.05.1966");
     }
-    @FindBy(xpath = "//*[@id=\"OWNER_DOC_SERIA\"]")
+
+    @FindBy(xpath = "/html/body/table/tbody/tr[3]/td/form/table/tbody/tr[1]/td/table/tbody/tr[2]/td/div/table/tbody/tr[51]/td[2]/div/input")
     private WebElement DocSeria3page;
-
     public void DocSeria3page(){
-        DOB3page.sendKeys("7728");
+        DocSeria3page.sendKeys("7728");
     }
-    @FindBy(xpath = "//*[@id=\"OWNER_DOC_NUMBER\"]")
-    private WebElement DocNumber3page;
 
+    @FindBy(xpath = "/html/body/table/tbody/tr[3]/td/form/table/tbody/tr[1]/td/table/tbody/tr[2]/td/div/table/tbody/tr[53]/td[2]/div/input")
+    private WebElement DocNumber3page;
     public void DocNumber3page(){
-        DOB3page.sendKeys("321123");
+        DocNumber3page.sendKeys("321123");
     }
 
     @FindBy(xpath = "//*[@id=\"INSURANCE_OBJECT_DOC_PTS_DATE\"]")
@@ -190,7 +191,7 @@ public class KaskoPage {
         DatePTS3page.sendKeys(formattedDate);
     }
 
-    @FindBy(xpath = "//*[@id=\"BTN_NEXTPAGE\"]")
+    @FindBy(xpath = "/html/body/table/tbody/tr[3]/td/form/table/tbody/tr[3]/td/table/tbody/tr/td[3]/font/input")
     private WebElement PageNext3page;
 
     public void PageNext3page(){
@@ -201,19 +202,19 @@ public class KaskoPage {
     private WebElement NumberVIN4page;
 
     public void NumberVIN4page(){
-        NumberVIN4page.sendKeys();
+        NumberVIN4page.sendKeys("ZD1MN370811519766");
     }
     @FindBy(xpath = "//*[@id=\"INSURANCE_OBJECT_DOC_PTS_SERIA\"]")
     private WebElement SeriaPTS4page;
 
     public void SeriaPTS4page(){
-        SeriaPTS4page.sendKeys();
+        SeriaPTS4page.sendKeys("13РТ");
     }
     @FindBy(xpath = "//*[@id=\"INSURANCE_OBJECT_DOC_PTS_NUMBER\"]")
     private WebElement NumberPTS4page;
 
     public void NumberPTS4page(){
-        NumberPTS4page.sendKeys();
+        NumberPTS4page.sendKeys("140281");
     }
     @FindBy(xpath = "/html/body/table/tbody/tr[3]/td/form/table/tbody/tr[2]/td/div/div/div[2]/div[1]/div/div/div/div/div[1]/div/div/table[1]/tbody/tr[2]/td[2]/em/button")
     private WebElement InsurerClientCardButton;
@@ -222,35 +223,99 @@ public class KaskoPage {
 
         InsurerClientCardButton.click();
     }
-    @FindBy(xpath = "/html/body/div[15]/div[2]/div[1]/div/div/div/div/div[2]/div[1]/div/div/div/div/div[2]/div/div/div[2]/div/div[1]/div/form/div/div[1]/div/div/div[1]/div[1]/input")
+    @FindBy(id = "last_name")
     private WebElement SurnameClientCard;
 
     public void EnterSurnameClientCard(){
-       SurnameClientCard.sendKeys("Береда");
+       SurnameClientCard.sendKeys("Лучков");
     }
-    @FindBy(xpath = "/html/body/div[14]/div[2]/div[1]/div/div/div/div/div[2]/div[1]/div/div/div/div/div[2]/div/div/div[2]/div/div[1]/div/form/div/div[1]/div/div/div[2]/div[1]/input")
+    @FindBy(id = "first_name")
     private WebElement NameClientCard;
 
     public void EnterNameClientCard(){
-        NameClientCard.sendKeys("Александр");
+        NameClientCard.sendKeys("Михаил");
     }
-    @FindBy(xpath = "/html/body/div[13]/div[2]/div[1]/div/div/div/div/div[2]/div[2]/div/div/div/div[1]/table/tbody/tr/td[1]/table/tbody/tr/td[3]/table/tbody/tr[2]/td[2]/em/button")
+
+    @FindBy(xpath = "//button[contains(text(),'Поиск')]")
     private WebElement SearchButtonClientCard;
 
     public void ClickSearchButtonClientCard(){
         SearchButtonClientCard.click();
     }
-    @FindBy(xpath = "/html/body/div[19]/div[2]/div[1]/div/div/div/div/div/div[1]/div/div[1]/div[2]/div/div[8]/table")
-    private WebElement PersonKK;
 
+    @FindBy(xpath = "/html/body/div[24]/div[2]/div[2]/div/div/div/div[1]/table/tbody/tr/td[2]/table/tbody/tr/td[1]/table/tbody/tr/td/table/tbody/tr[2]/td[2]")
+    private WebElement SelectButton;
+    @FindBy(xpath = "//div[contains(text(),'Лучков')]")
+    public WebElement PersonKK;
     public void SelectPerson(){
         PersonKK.click();
-        PersonKK.click();
-           }
+    }
+
+
     @FindBy(xpath = "/html/body/div[12]/div[2]/div[1]/div/div/div/div/div[2]/div[2]/div/div/div/div[1]/table/tbody/tr/td[1]/table/tbody/tr/td[4]/table/tbody/tr[2]/td[2]/em/button")
     private WebElement SelectKKButton;
     public void ClickSelectButtonKK(){
         SelectKKButton.click();
+    }
+
+    @FindBy(xpath = "//*[@id=\"INSURANCE_OBJECT_KEYS\"]")
+    private WebElement KeyCount;
+
+    public void KeyCount(){
+        KeyCount.sendKeys("2");
+    }
+
+    @FindBy(xpath = "/html/body/table/tbody/tr[3]/td/form/table/tbody/tr[6]/td/table/tbody/tr[1]/td/font/a/b")
+    private WebElement FaceClick;
+
+    public void FaceClick(){
+        FaceClick.click();
+    }
+
+    @FindBy(id = "USER_1_FULL_NAME")
+    private WebElement USER_1_FULL_NAME;
+
+    public void USER_1_FULL_NAME(){
+        USER_1_FULL_NAME.sendKeys("Береда Александр Николаевич");
+    }
+    @FindBy(id= "USER_1_EXP_DATE")
+    private WebElement USER_1_EXP_DATE;
+
+    public void USER_1_EXP_DATE(){
+        USER_1_EXP_DATE.sendKeys("31.12.1989");
+    }
+
+    @FindBy(id = "USER_1_BIRTH_DATE")
+    private WebElement USER_1_BIRTH_DATE;
+
+    public void USER_1_BIRTH_DATE(){
+        USER_1_BIRTH_DATE.sendKeys("13.05.1967");
+    }
+    @FindBy(id = "USER_1_DOC_SERIA")
+    private WebElement USER_1_DOC_SERIA;
+
+    public void USER_1_DOC_SERIA(){
+        USER_1_DOC_SERIA.sendKeys("7728");
+    }
+    @FindBy(id = "USER_1_DOC_NUMBER")
+    private WebElement USER_1_DOC_NUMBER;
+
+    public void USER_1_DOC_NUMBER(){
+        USER_1_DOC_NUMBER.sendKeys("321123");
+    }
+
+
+    @FindBy(xpath = "//*[@id=\"BTN_NEXTPAGE\"]")
+    private WebElement ButtonNext4page;
+
+    public void ClickButtonNext4page(){
+        ButtonNext4page.click();
+    }
+    @FindBy(xpath = "//*[@id=\"_TR\"]/td[2]/div/a[1]")
+    private WebElement PreliminaryKaskoPolice;
+
+    public void SavePreliminaryKaskoPolice(){
+    PreliminaryKaskoPolice.click();
     }
 
 }

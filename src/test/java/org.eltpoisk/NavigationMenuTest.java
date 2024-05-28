@@ -70,7 +70,7 @@ public class NavigationMenuTest {
         assertEquals("По номеру", driver.findElement(By.xpath("/html/body/div[2]/div[2]/div[2]/ul/div/li/ul/li[2]/ul/li[2]/ul/li/div/a/span")).getText());
         assertEquals("Платежи", driver.findElement(By.xpath("/html/body/div[2]/div[2]/div[2]/ul/div/li/ul/li[3]/div/a/span")).getText());
         assertEquals("Платежи", driver.findElement(By.xpath("//a[contains(span/text(), 'Платежи')]")).getText());
-        assertEquals("Ошибки", driver.findElement(By.xpath("//*[@id=\"ext-gen104\"]/li[4]/div/a/span")).getText());
+        assertEquals("Ошибки", driver.findElement(By.xpath("/html/body/div[2]/div[2]/div[2]/ul/div/li/ul/li[4]/div/a/span")).getText());
         assertEquals("Журнал ошибок", driver.findElement(By.xpath("//a[contains(span/text(), 'Журнал ошибок')]")).getText());
         assertEquals("Бланки строгой отчетности", driver.findElement(By.xpath("//*[@id=\"ext-gen104\"]/li[5]/div/a/span")).getText());
         assertEquals("Выдача/передача БСО", driver.findElement(By.xpath("/html/body/div[2]/div[2]/div[2]/ul/div/li/ul/li[5]/ul/li[1]/div/a/span")).getText());

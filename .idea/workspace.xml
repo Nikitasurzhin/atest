@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5cea6f0-091c-4d1b-bdbd-3baaf378e21a" name="Default Changelist" comment="Доработка тестов">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org.eltpoisk/KaskoPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org.eltpoisk/RandomDataTools.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org.eltpoisk/RgsKasko.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org.eltpoisk/FastRegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org.eltpoisk/FastRegistrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org.eltpoisk/InsuranceContractNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org.eltpoisk/InsuranceContractNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org.eltpoisk/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org.eltpoisk/ProfilePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org.eltpoisk/TemplatesMenuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org.eltpoisk/TemplatesMenuTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org.eltpoisk/KaskoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org.eltpoisk/KaskoPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org.eltpoisk/NavigationMenuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org.eltpoisk/NavigationMenuTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org.eltpoisk/RgsKasko.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org.eltpoisk/RgsKasko.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/conf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/conf.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/conf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/conf.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/eltpoisk/ProfilePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/eltpoisk/ProfilePage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +64,7 @@
       <recent name="org.eltpoisk" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FastRegistrationTest.FastRegistrationTest">
+  <component name="RunManager" selected="JUnit.RgsKasko.RgsKaskoTest">
     <configuration name="FastRegistrationTest.FastRegistrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="autotest" />
       <extension name="coverage">
@@ -81,22 +76,6 @@
       <option name="PACKAGE_NAME" value="org.eltpoisk" />
       <option name="MAIN_CLASS_NAME" value="org.eltpoisk.FastRegistrationTest" />
       <option name="METHOD_NAME" value="FastRegistrationTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InsuranceContractNumber.insurContractNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="autotest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.eltpoisk.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.eltpoisk" />
-      <option name="MAIN_CLASS_NAME" value="org.eltpoisk.InsuranceContractNumber" />
-      <option name="METHOD_NAME" value="insurContractNumber" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -114,6 +93,21 @@
       <option name="MAIN_CLASS_NAME" value="org.eltpoisk.NavigationMenuTest" />
       <option name="METHOD_NAME" value="navigationMenuTest" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RgsKasko" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="autotest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.eltpoisk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.eltpoisk" />
+      <option name="MAIN_CLASS_NAME" value="org.eltpoisk.RgsKasko" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -175,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FastRegistrationTest.FastRegistrationTest" />
+        <item itemvalue="JUnit.RgsKasko.RgsKaskoTest" />
+        <item itemvalue="JUnit.RgsKasko" />
         <item itemvalue="JUnit.TemplatesMenuTest.TemplatesMenuTestFilter" />
         <item itemvalue="JUnit.NavigationMenuTest.navigationMenuTest" />
-        <item itemvalue="JUnit.RgsKasko.RgsKaskoTest" />
-        <item itemvalue="JUnit.InsuranceContractNumber.insurContractNumber" />
+        <item itemvalue="JUnit.FastRegistrationTest.FastRegistrationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -269,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710152523879</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Доработка тестов">
+      <created>1715691709494</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1715691709494</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

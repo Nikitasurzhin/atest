@@ -10,6 +10,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 import java.io.UnsupportedEncodingException;
@@ -96,12 +97,17 @@ public class RgsKasko {
         kaskoPage.DrivingSexChoice();
         kaskoPage.BtnNextPageClick();
         //System.out.println(textConverter(kaskoPage.RgsInfoBlock.getText()));
-        //kaskoPage.RgsHullInsuranceClick();
-        String RgsPriceText = kaskoPage.RgsPrice.getText();
-        if (RgsPriceText == "0 руб."){
-           System.out.println(kaskoPage.RgsInfoBlock.getText());
-        } else {
+       // kaskoPage.RgsHullInsuranceClick();
+
+        String RgsPriceText = (kaskoPage.RgsPrice.getText());
+        if (RgsPriceText.trim().equals("0 руб."))
+               {
+          System.out.println(textConverter(kaskoPage.RgsInfoBlock.getText()));
+        }
+               else
+        {
             kaskoPage.RgsHullInsuranceClick();
+
         }
         kaskoPage.Surname3page();
         kaskoPage.Name3page();
@@ -110,6 +116,30 @@ public class RgsKasko {
         kaskoPage.DocSeria3page();
         kaskoPage.DocNumber3page();
         kaskoPage.DatePTS3page();
+        kaskoPage.PageNext3page();
+        kaskoPage.NumberVIN4page();
+        kaskoPage.SeriaPTS4page();
+        kaskoPage.NumberPTS4page();
+        kaskoPage.ClickInsurerClientCardButton();
+        kaskoPage.EnterSurnameClientCard();
+        kaskoPage.EnterNameClientCard();
+        kaskoPage.ClickSearchButtonClientCard();
+        kaskoPage.SelectPerson();
+        Actions actions = new Actions(driver);
+        actions.doubleClick(kaskoPage.PersonKK).perform();
+        Thread.sleep(5000);
+        kaskoPage.ClickSelectButtonKK();
+        Thread.sleep(5000);
+        kaskoPage.KeyCount();
+        kaskoPage.FaceClick();
+        kaskoPage.USER_1_FULL_NAME();
+        kaskoPage.USER_1_EXP_DATE();
+        kaskoPage.USER_1_BIRTH_DATE();
+        kaskoPage.USER_1_DOC_SERIA();
+        kaskoPage.USER_1_DOC_NUMBER();
+        kaskoPage.ClickButtonNext4page();
+        kaskoPage.SavePreliminaryKaskoPolice();
+        Thread.sleep(5000);
 
 
     }
