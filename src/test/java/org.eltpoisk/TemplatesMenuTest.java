@@ -67,7 +67,7 @@ public class TemplatesMenuTest {
         loginPage.inputPasswd(ConfProperties.getProperty("passwd"));
         //нажимаем кнопку входа
         loginPage.clickLoginBtn();
-        WebElement PageOne = driver.findElement(By.xpath("//div[contains(text(), 'Фамилия154646 И.О.')]"));
+        WebElement PageOne = driver.findElement(By.xpath("//div[contains(text(), 'Фамилия И.О.')]"));
         String loginPageOne = PageOne.getText();
         profilePage.Template();
         assertEquals(true, (driver.findElement(By.xpath("//*[@id=\"ext-gen3\"]/table/tbody/tr[1]/td/a/img")).isDisplayed()));

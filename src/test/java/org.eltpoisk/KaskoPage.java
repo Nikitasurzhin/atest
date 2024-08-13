@@ -29,6 +29,52 @@ public class KaskoPage {
         Moscow.click();
     }
 
+    @FindBy(id = "changeUserDepartmentCombo")
+    private WebElement DepartmentRGS;
+    public void DepartmentRGS(){
+        DepartmentRGS.sendKeys("Тест");
+    }
+    @FindBy(id = "changeUserDepartmentCombo")
+    private WebElement DepartmentRESO;
+    public void DepartmentRESO(){
+        DepartmentRESO.sendKeys("Тест Ресо");
+    }
+
+    @FindBy(id = "changeUserDepartmentCombo")
+    private WebElement DepartmentRenins;
+    public void DepartmentRenins(){
+        DepartmentRESO.sendKeys("Тест Реник");
+    }
+    @FindBy(id = "changeUserDepartmentCombo")
+    private WebElement DepartmentSovcom;
+    public void DepartmentSovcom(){
+        DepartmentRESO.sendKeys("Тест Совком");
+    }
+    @FindBy(id = "changeUserDepartmentCombo")
+    private WebElement DepartmentEnergo;
+    public void DepartmentEnergo(){
+        DepartmentRESO.sendKeys("Энергогарант тест");
+    }
+
+
+
+    @FindBy(xpath = "/html/body/div[15]/div[2]/div[2]/div/div/div/div[1]/table/tbody/tr/td[2]/table/tbody/tr/td[1]/table/tbody/tr/td[1]/table/tbody/tr[2]/td[2]/em/button")
+    private WebElement SubmitDepartment;
+    public void SubmitDepartment(){
+        SubmitDepartment.click();
+    }
+    @FindBy(xpath = "/html/body/div[13]/div[2]/div[2]/div/div/div/div[1]/table/tbody/tr/td[1]/table/tbody/tr/td[1]/table/tbody/tr[2]/td[2]")
+    private WebElement SubmitDepartmentTwo;
+    public void SubmitDepartmentTwo(){
+        SubmitDepartmentTwo.click();
+    }
+    @FindBy(xpath = "//label[@for=\"changeUserDepartmentCombo\"]")
+    private WebElement changeUserDepartmentCombo;
+    public void changeUserDepartmentCombo(){
+        changeUserDepartmentCombo.click();
+    }
+
+
     @FindBy(xpath = "//*[@id=\"INSURED_PERSON_FULL_NAME\"]")
     private WebElement FIO;
     public void FIOInputField(){
@@ -41,7 +87,7 @@ public class KaskoPage {
         DOB.sendKeys("13.05.1966");
     }
 
-    @FindBy(xpath = "//*[@id=\"INSURANCE_OBJECT_BRAND\"]/option[131]")
+    @FindBy(xpath = "//*[@id=\"INSURANCE_OBJECT_BRAND\"]/option[132]")
     private WebElement Geely;
 
     public void MarkGeelyChoice(){
@@ -134,15 +180,15 @@ public class KaskoPage {
     }
     @FindBy(xpath = "/html/body/div[1]/div/div/div[3]/div[2]/div/div/div/div/div/div/div[1]/div/div/div[2]/div/div/div/div/div/div/div[1]/div/div/div[4]/div/div/a[1]/span/span/span[2]")
     public WebElement RgsHullInsurance;
-    public void RgsHullInsuranceClick(){
+    public void HullInsuranceClick(){
         RgsHullInsurance.click();
     }
 
     @FindBy(xpath = "/html/body/div[1]/div/div/div[3]/div[2]/div/div/div/div/div/div/div[1]/div/div/div[2]/div/div/div/div/div/div/div[2]/div/div/label[3]/div[2]")
-    public WebElement RgsInfoBlock;
+    public WebElement InfoBlock;
 
     @FindBy(xpath = "/html/body/div[1]/div/div/div[3]/div[2]/div/div/div/div/div/div/div[1]/div/div/div[2]/div/div/div/div/div/div/div[1]/div/div/div[4]/div/div/div/div/div/span")
-    public WebElement RgsPrice;
+    public WebElement Price;
 
     @FindBy(xpath = "//*[@id=\"OWNER_LAST_NAME\"]")
     private WebElement Surname3page;
@@ -191,7 +237,7 @@ public class KaskoPage {
         DatePTS3page.sendKeys(formattedDate);
     }
 
-    @FindBy(xpath = "/html/body/table/tbody/tr[3]/td/form/table/tbody/tr[3]/td/table/tbody/tr/td[3]/font/input")
+    @FindBy(id = "BTN_NEXTPAGE")
     private WebElement PageNext3page;
 
     public void PageNext3page(){
@@ -252,7 +298,8 @@ public class KaskoPage {
     }
 
 
-    @FindBy(xpath = "/html/body/div[12]/div[2]/div[1]/div/div/div/div/div[2]/div[2]/div/div/div/div[1]/table/tbody/tr/td[1]/table/tbody/tr/td[4]/table/tbody/tr[2]/td[2]/em/button")
+    @FindBy(xpath = "//button[contains(text(),'Выбрать клиента')]")
+
     private WebElement SelectKKButton;
     public void ClickSelectButtonKK(){
         SelectKKButton.click();
@@ -265,7 +312,7 @@ public class KaskoPage {
         KeyCount.sendKeys("2");
     }
 
-    @FindBy(xpath = "/html/body/table/tbody/tr[3]/td/form/table/tbody/tr[6]/td/table/tbody/tr[1]/td/font/a/b")
+    @FindBy(xpath = "//*[@id=\"form\"]/table/tbody/tr[6]/td/table/tbody/tr[1]/td/font/a/b")
     private WebElement FaceClick;
 
     public void FaceClick(){
@@ -316,6 +363,150 @@ public class KaskoPage {
 
     public void SavePreliminaryKaskoPolice(){
     PreliminaryKaskoPolice.click();
+    }
+
+    @FindBy(id = "BTN_SAVE")
+    private WebElement ButtonSave;
+    public void ButtonSave(){
+        ButtonSave.click();
+    }
+    @FindBy(id = "CONTRACT_DOUBLE_SAVE")
+    private WebElement CONTRACT_DOUBLE_SAVE;
+
+    public void ClickCONTRACT_DOUBLE_SAVE(){
+        CONTRACT_DOUBLE_SAVE.click();
+    }
+
+
+    @FindBy(id = "RESO_GARANTIJA_DATE_BUY_TS")
+    private WebElement ResoGarantijaDateBuyTS;
+    public void ResoGarantijaDateBuyTS(){
+        LocalDate today = LocalDate.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
+        String formattedDate = today.format(formatter);
+        ResoGarantijaDateBuyTS.sendKeys(formattedDate);
+    }
+
+    @FindBy(id = "RESO_GARANTIJA_INSURANCE_SPEC_03_SEATS")
+    private WebElement ResoGarantijaSeats;
+    public void ResoGarantijaSeats(){
+        ResoGarantijaSeats.sendKeys("5");
+    }
+    @FindBy(id = "CONTRACT_BEGIN_DATE_CALC")
+    private WebElement ContractBeginDate;
+    public void ContractBeginDate(){
+        LocalDate today = LocalDate.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
+        String formattedDate = today.format(formatter);
+        ContractBeginDate.sendKeys(formattedDate);
+    }
+
+
+    @FindBy(xpath = "//*[@id=\"INSURANCE_OBJECT_COLOUR\"]/option[4]")
+    private WebElement WhiteColor;
+    public void InsuranceObjectColour(){
+        WhiteColor.click();
+    }
+    @FindBy(id = "INSURANCE_OBJECT_DMG_NOTES")
+    private WebElement InsuranceObjectDmgNote;
+    public void InsuranceObjectDmgNote(){
+        InsuranceObjectDmgNote.sendKeys("Нет");
+    }
+    @FindBy(xpath = "//*[@id=\"_TR\"]/td[2]/div/a[1]/strong")
+    private WebElement ResoPolic;
+    public void ResoPolic(){
+        ResoPolic.click();
+    }
+
+    @FindBy(id = "//*[@id=\"INSURANCE_OBJECT_NEW2\"]/option[2]")
+    private WebElement InsuranceObjectNew;
+    public void InsuranceObjectNew(){
+        InsuranceObjectNew.click();
+    }
+
+    @FindBy(id = "SOVKOMBANK_77_DATE_BUY")
+    private WebElement SovkomBank77DateBuy;
+    public void SovkomBank77DateBuy(){
+        LocalDate today = LocalDate.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
+        String formattedDate = today.format(formatter);
+        SovkomBank77DateBuy.sendKeys(formattedDate);
+    }
+    @FindBy(id = "USER_1_DOC_DATE")
+    private WebElement USER_1_DOC_DATE;
+    public void USER_1_DOC_DATE(){
+        USER_1_DOC_DATE.sendKeys("12.05.2018");
+    }
+    @FindBy(id = "INSURANCE_OBJECT_KUZOV")
+    private WebElement InsuranceObjectKuzov;
+    public void InsuranceObjectKuzov(){
+        InsuranceObjectKuzov.sendKeys("ZD1MN370811519766");
+    }
+
+    @FindBy(xpath = "//*[@id=\"INSURANCE_OBJECT_COLOR\"]/option[20]")
+    private WebElement InsuranceObjectColor;
+    public void InsuranceObjectColor(){
+        InsuranceObjectColor.click();
+    }
+    @FindBy(xpath = "//*[@id=\"INSURANCE_OBJECT_CHANGE_DOC_TS\"]/option[3]")
+    private WebElement InsuranceObjectChangeDocTs;
+    public void InsuranceObjectChangeDocTs(){
+        InsuranceObjectChangeDocTs.click();
+    }
+    @FindBy(xpath = "//*[@id=\"INSURANCE_OBJECT_PTS_REGION\"]/option[3]")
+    private WebElement InsuranceObjectPtsRegion;
+    public void InsuranceObjectPtsRegion(){
+        InsuranceObjectPtsRegion.click();
+    }
+
+    @FindBy(xpath = "//*[@id=\"INSURANCE_OBJECT_PTS_BY_KZ\"]/option[3]")
+    private WebElement INSURANCE_OBJECT_PTS_BY_KZ;
+    public void INSURANCE_OBJECT_PTS_BY_KZ(){
+        INSURANCE_OBJECT_PTS_BY_KZ.click();
+    }
+    @FindBy(xpath = "//*[@id=\"INSURANCE_OBJECT_PTS_GIBDD\"]/option[3]")
+    private WebElement INSURANCE_OBJECT_PTS_GIBDD;
+    public void INSURANCE_OBJECT_PTS_GIBDD(){
+        INSURANCE_OBJECT_PTS_GIBDD.click();
+    }
+    @FindBy(xpath = "//*[@id=\"INSURANCE_OBJECT_OWNER_COUNT\"]/option[3]")
+    private WebElement INSURANCE_OBJECT_OWNER_COUNT;
+    public void INSURANCE_OBJECT_OWNER_COUNT(){
+        INSURANCE_OBJECT_OWNER_COUNT.click();
+    }
+    @FindBy(xpath = "//*[@id=\"INSURANCE_OBJECT_FINDED_TS\"]/option[3]")
+    private WebElement INSURANCE_OBJECT_FINDED_TS;
+    public void INSURANCE_OBJECT_FINDED_TS(){
+        INSURANCE_OBJECT_FINDED_TS.click();
+    }
+
+    @FindBy(xpath = "//*[@id=\"INSURANCE_OBJECT_CHANGE_VIN\"]/option[3]")
+    private WebElement INSURANCE_OBJECT_CHANGE_VIN;
+    public void INSURANCE_OBJECT_CHANGE_VIN(){
+        INSURANCE_OBJECT_CHANGE_VIN.click();
+    }
+
+    @FindBy(xpath = "//*[@id=\"INSURANCE_OBJECT_BU_TS\"]/option[3]")
+    private WebElement INSURANCE_OBJECT_BU_TS;
+    public void INSURANCE_OBJECT_BU_TS(){
+        INSURANCE_OBJECT_BU_TS.click();
+    }
+
+    @FindBy(xpath = "//*[@id=\"INSURANCE_OBJECT_MOLDING\"]/option[3]")
+    private WebElement INSURANCE_OBJECT_MOLDING;
+    public void INSURANCE_OBJECT_MOLDING(){
+        INSURANCE_OBJECT_MOLDING.click();
+    }
+    @FindBy(xpath = "//*[@id=\"INSURANCE_OBJECT_TOTAL_REPAIR\"]/option[3]")
+    private WebElement INSURANCE_OBJECT_TOTAL_REPAIR;
+    public void INSURANCE_OBJECT_TOTAL_REPAIR(){
+        INSURANCE_OBJECT_TOTAL_REPAIR.click();
+    }
+
+    @FindBy(xpath = "//*[@id=\"INSURANCE_OBJECT_EXHIBITION\"]/option[3]")
+    private WebElement INSURANCE_OBJECT_EXHIBITION;
+    public void INSURANCE_OBJECT_EXHIBITION(){
+        INSURANCE_OBJECT_EXHIBITION.click();
     }
 
 }

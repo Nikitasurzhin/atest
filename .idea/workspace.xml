@@ -7,10 +7,9 @@
     <list default="true" id="e5cea6f0-091c-4d1b-bdbd-3baaf378e21a" name="Default Changelist" comment="Доработка тестов">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org.eltpoisk/KaskoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org.eltpoisk/KaskoPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org.eltpoisk/NavigationMenuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org.eltpoisk/NavigationMenuTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org.eltpoisk/RgsKasko.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org.eltpoisk/RgsKasko.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/conf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/conf.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/conf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/conf.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org.eltpoisk/RgsKasko.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org.eltpoisk/KaskoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org.eltpoisk/TemplatesMenuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org.eltpoisk/TemplatesMenuTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/eltpoisk/NavigationMenuTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/eltpoisk/NavigationMenuTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,8 +63,8 @@
       <recent name="org.eltpoisk" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RgsKasko.RgsKaskoTest">
-    <configuration name="FastRegistrationTest.FastRegistrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TemplatesMenuTest.TemplatesMenuTestFilter">
+    <configuration name="KaskoTest.EnergoKaskoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="autotest" />
       <extension name="coverage">
         <pattern>
@@ -74,8 +73,40 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.eltpoisk" />
-      <option name="MAIN_CLASS_NAME" value="org.eltpoisk.FastRegistrationTest" />
-      <option name="METHOD_NAME" value="FastRegistrationTest" />
+      <option name="MAIN_CLASS_NAME" value="org.eltpoisk.KaskoTest" />
+      <option name="METHOD_NAME" value="EnergoKaskoTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KaskoTest.RensinsKaskoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="autotest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.eltpoisk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.eltpoisk" />
+      <option name="MAIN_CLASS_NAME" value="org.eltpoisk.KaskoTest" />
+      <option name="METHOD_NAME" value="RensinsKaskoTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KaskoTest.SovcomKaskoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="autotest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.eltpoisk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.eltpoisk" />
+      <option name="MAIN_CLASS_NAME" value="org.eltpoisk.KaskoTest" />
+      <option name="METHOD_NAME" value="SovcomKaskoTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -92,37 +123,6 @@
       <option name="PACKAGE_NAME" value="org.eltpoisk" />
       <option name="MAIN_CLASS_NAME" value="org.eltpoisk.NavigationMenuTest" />
       <option name="METHOD_NAME" value="navigationMenuTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RgsKasko" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="autotest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.eltpoisk.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.eltpoisk" />
-      <option name="MAIN_CLASS_NAME" value="org.eltpoisk.RgsKasko" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RgsKasko.RgsKaskoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="autotest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.eltpoisk.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.eltpoisk" />
-      <option name="MAIN_CLASS_NAME" value="org.eltpoisk.RgsKasko" />
-      <option name="METHOD_NAME" value="RgsKaskoTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -169,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RgsKasko.RgsKaskoTest" />
-        <item itemvalue="JUnit.RgsKasko" />
         <item itemvalue="JUnit.TemplatesMenuTest.TemplatesMenuTestFilter" />
         <item itemvalue="JUnit.NavigationMenuTest.navigationMenuTest" />
-        <item itemvalue="JUnit.FastRegistrationTest.FastRegistrationTest" />
+        <item itemvalue="JUnit.KaskoTest.EnergoKaskoTest" />
+        <item itemvalue="JUnit.KaskoTest.SovcomKaskoTest" />
+        <item itemvalue="JUnit.KaskoTest.RensinsKaskoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -270,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715691709494</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Доработка тестов">
+      <created>1716908271210</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1716908271210</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
